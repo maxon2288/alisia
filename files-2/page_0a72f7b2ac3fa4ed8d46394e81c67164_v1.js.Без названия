@@ -1,0 +1,36 @@
+
+; /* Start:"a:4:{s:4:"full";s:95:"/local/templates/aliciav2/components/bitrix/system.pagenavigation/ajax/script.js?16221861281238";s:6:"source";s:80:"/local/templates/aliciav2/components/bitrix/system.pagenavigation/ajax/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(document).ready(function(){
+
+    $(document).on('click', '.js-show-more a', function(e){
+        e.preventDefault();
+        var targetContainer = $('.js-ajax-container'),          //  Контейнер, в котором хранятся элементы
+            elementContainer =  $('.js-ajax-item-container'),
+            url =  $(this).attr('data-url');    //  URL, из которого будем брать элементы
+
+        if (url !== undefined) {
+            $.ajax({
+                type: 'GET',
+                url: url,
+                dataType: 'html',
+                success: function(data){
+
+                    //  Удаляем старую навигацию
+                    $('.js-show-more').remove();
+
+                    var elements = $(data).find('.js-ajax-item'),  //  Ищем элементы
+                        pagination = $(data).find('.js-show-more');//  Ищем навигацию
+
+                    elementContainer.append(elements);   //  Добавляем посты в конец контейнера
+                    targetContainer.append(pagination); //  добавляем навигацию следом
+
+                }
+            })
+        }
+
+    });
+
+});
+
+/* End */
+;; /* /local/templates/aliciav2/components/bitrix/system.pagenavigation/ajax/script.js?16221861281238*/
