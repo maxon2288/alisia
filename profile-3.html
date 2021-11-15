@@ -652,24 +652,29 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- new -->
                     <div class="content-block">
                         <h1>
                             Личный кабинет
                         </h1>
 
                         <div class="mprofile">
+                            
                             <div class="mprofile__sidebar">
                                 <div class="mprofile__sidebar-top">
                                     Николай Константинопольский
                                 </div>
                                 <div class="mprofile__sidebar-menu">
-                                    <a href="#" class="mprofile__sidebar-item active">
+                                    <div class="mprofile__sidebar-close">
+                                        <img src="img/close-popup.svg" alt="">
+                                    </div>
+                                    <a href="#" class="mprofile__sidebar-item">
                                         <span>
                                             Профиль
                                         </span>
                                         <img src="img/mprofile-arrow.svg" alt="">
                                     </a>
-                                    <a href="#" class="mprofile__sidebar-item">
+                                    <a href="#" class="mprofile__sidebar-item active">
                                         <span>
                                             Мои заказы
                                         </span>
@@ -701,41 +706,276 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="mprofile__content">
-                                <form action="#" class="mprofile__fields">
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="ФИО">
+                            <div class="proftable">
+                                <a href="profile-1.html" class="proftable__back">
+                                    <img src="img/proftable-back.svg" alt="">
+                                    <span>Вернуться  к списку заказов</span>
+                                </a>
+                                <div class="mprofile__mobile">
+                                    <span>
+                                        <img src="img/menu.svg" alt="">
+                                    </span> 
+                                    Меню
+                                </div>
+                                <div class="proftable__item">
+                                    <div class="proftable__header">
+                                        <div class="proftable__header-left">
+                                            <div class="proftable__header-item">
+                                                Заказ <span>№583541</span>
+                                            </div>
+                                            <div class="proftable__header-item">
+                                                Стоимость <span>123 864 руб.</span>
+                                            </div>
+                                            <div class="proftable__header-item">
+                                                Дата <span>21.11.2021</span>
+                                            </div>
+                                            <div class="proftable__header-item">
+                                                <span>Доставка</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Email">
+                                    <div class="proftable__body">
+                                        <div class="proftable__body-container-2">
+                                            <div class="ordrtable">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ordrtable__info">
+                                                                <div class="ordrtable__info-title">
+                                                                    Информация о заказе
+                                                                </div>
+                                                                <div class="ordrtable__item">
+                                                                    <div class="ordrtable__item-title">
+                                                                        ФИО
+                                                                    </div>
+                                                                    <div class="ordrtable__item-desc">
+                                                                        Николай Константинопольский
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item">
+                                                                <div class="ordrtable__item-title">
+                                                                    Текущий статус
+                                                                </div>
+                                                                <div class="ordrtable__item-desc">
+                                                                    Принят, ожидается оплата
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item">
+                                                                <div class="ordrtable__item-title">
+                                                                    Сумма
+                                                                </div>
+                                                                <div class="ordrtable__item-desc">
+                                                                    280 500 руб.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item ordrtable__item-buttons">
+                                                                <a href="order.html" class="proftable__button">
+                                                                    Повторить заказ
+                                                                </a>
+                                                                <a href="#" class="ordrtable__link">Отменить заказ</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="3">
+                                                            <div class="ordrtable__info">
+                                                                <div class="ordrtable__info-title">
+                                                                    Параметры оплаты
+                                                                </div>
+                                                                <div class="ordrtable__item">
+                                                                    <div class="ordrtable__item-title">
+                                                                        Способ оплаты
+                                                                    </div>
+                                                                    <div class="ordrtable__item-desc">
+                                                                        Банковской картой <a href="#">Изменить способ оплаты</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item ordrtable__item-buttons">
+                                                                <a href="#" class="proftable__button">
+                                                                    Оплатить
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ordrtable__info">
+                                                                <div class="ordrtable__info-title">
+                                                                    Доставка
+                                                                </div>
+                                                                <div class="ordrtable__item">
+                                                                    <div class="ordrtable__item-title">
+                                                                        Способ доставки
+                                                                    </div>
+                                                                    <div class="ordrtable__item-desc">
+                                                                        Курьером
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item">
+                                                                <div class="ordrtable__item-title">
+                                                                    Статус отгрузки
+                                                                </div>
+                                                                <div class="ordrtable__item-desc">
+                                                                    Ожидает обработки
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="ordrtable__item">
+                                                                <div class="ordrtable__item-title">
+                                                                    Стоимость доставки
+                                                                </div>
+                                                                <div class="ordrtable__item-desc">
+                                                                    500 руб.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <div class="ordrtable__info">
+                                                                <div class="ordrtable__info-title">
+                                                                    Детали заказа
+                                                                </div>
+                                                            </div>
+                                                            <div class="ordrtable__tovar">
+                                                                <div class="ordrtable__tovar-img">
+                                                                    <img src="img/tovar-1.png" alt="">
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info">
+                                                                    <div class="ordrtable__tovar-title">
+                                                                        Наименование
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        Название модуля в пару  строк
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info">
+                                                                    <div class="ordrtable__tovar-title">
+                                                                        Цена
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-price">
+                                                                        <div class="ordrtable__tovar-price-new">
+                                                                            69 999 руб.
+                                                                        </div>
+                                                                        <div class="ordrtable__tovar-price-old">
+                                                                            80 000 руб.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info ordrtable__tovar-count">
+                                                                    <div class="ordrtable__tovar-title">
+                                                                        Кол-во
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        2
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info ordrtable__tovar-price-1">
+                                                                    <div class="ordrtable__tovar-title">
+                                                                        Стоимость
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        <div class="ordrtable__tovar-price">
+                                                                            <div class="ordrtable__tovar-price-new">
+                                                                                140 000 руб.
+                                                                            </div>
+                                                                            <div class="ordrtable__tovar-price-old discount-container">
+                                                                                160 000 руб.
+                                                                                <div class="discount">
+                                                                                    <img src="img/discount.svg" alt="">
+                                                                                    <span>-15%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ordrtable__tovar">
+                                                                <div class="ordrtable__tovar-img">
+                                                                    <img src="img/tovar-1.png" alt="">
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info">
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        Название модуля в пару  строк
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info">
+                                                                    <div class="ordrtable__tovar-price">
+                                                                        <div class="ordrtable__tovar-price-new">
+                                                                            69 999 руб.
+                                                                        </div>
+                                                                        <div class="ordrtable__tovar-price-old">
+                                                                            80 000 руб.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info ordrtable__tovar-count">
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        2
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ordrtable__tovar-info ordrtable__tovar-price-1">
+                                                                    <div class="ordrtable__tovar-desc">
+                                                                        <div class="ordrtable__tovar-price">
+                                                                            <div class="ordrtable__tovar-price-new">
+                                                                                140 000 руб.
+                                                                            </div>
+                                                                            <div class="ordrtable__tovar-price-old discount-container">
+                                                                                160 000 руб.
+                                                                                <div class="discount">
+                                                                                    <img src="img/discount.svg" alt="">
+                                                                                    <span>-15%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <a href="profile-1.html" class="proftable__back">
+                                                                <img src="img/proftable-back.svg" alt="">
+                                                                <span>Вернуться  к списку заказов</span>
+                                                            </a>
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <div class="ordrtable__sum">
+                                                                <div class="ordrtable__sum-title">
+                                                                    Итого
+                                                                </div>
+                                                                <div class="ordrtable__sum-desc">
+                                                                    280 000 руб.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Город">
-                                    </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Адрес">
-                                    </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Номер телефона">
-                                    </div>
-                                    <div class="mprofile__fields-title">
-                                        Изменить пароль
-                                    </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Новый пароль">
-                                    </div>
-                                    <div class="mprofile__field">
-                                        <input type="text" placeholder="Подтверждение пароля">
-                                    </div>
-                                    <div class="mprofile__field">
-                                        <button>Сохранить изменения</button>
-                                    </div>
-                                </form>
+                                </div>
+                                
                             </div>
                         </div>
                         
                     </div>
-                        
+                    <!-- new end -->
                     
                 </div>
             </div>
@@ -895,6 +1135,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
+    <script type="text/javascript" src="./js/custom.js"></script>
 
 
 </body>

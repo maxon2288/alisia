@@ -29,6 +29,7 @@
     <link rel="shortcut icon" href="https://alicia-mebel.ru/favicon.ico" type="image/x-icon">
     <link href="./files-4/core.css" type="text/css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/custom.css">
 
 
     <link href="./files-4/template_edec0d58f0681b6736e1b4045bfdcb4d_v1.css" type="text/css" data-template-style="true"
@@ -651,6 +652,248 @@
                         </div>
                     </div>
 
+                    <div class="content-block">
+                        <h1>
+                            Корзина
+                        </h1>
+                        <div class="mcart">
+                            <div class="mcart__top">
+                                <div class="mcart__kupon">
+                                    <input type="text" placeholder="Код купона">
+                                    <img src="img/mcard-kupon.svg" alt="">
+                                </div>
+                                <div class="ordrm__sidebar-item no-border">
+                                    <div class="ordrm__sidebar-left">
+                                        <div class="ordrm__sidebar-desc">
+                                            Итого:
+                                        </div>
+                                        <div class="ordrm__sidebar-desc-1">
+                                            Сумма НДС: 0 ₽
+                                        </div>
+                                    </div>
+                                    <div class="ordrm__sidebar-right">
+                                        <div class="ordrm__sidebar-itog">
+                                            104 999 руб.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mcart__buttons">
+                                    <a href="#" class="mcart__button-1">Оформить заказ</a>
+                                    <a href="#" class="mcart__button-2">Быстрый заказ</a>
+                                </div>
+                            </div>
+
+                            <div class="mcart__content">
+                                <div class="mcart__head">
+                                    <div class="mcart__head-left">
+                                        В корзине 2 товара
+                                    </div>
+                                    <a href="#" class="mcart__head-right">
+                                        Очистить корзину
+                                    </a>
+                                </div>
+                                <div class="ordrtable mcart__container">
+                                    <table>
+                                        <tr>
+                                            <td colspan="4">
+                                                <div class="ordrtable__tovar mcart__item">
+                                                    
+                                                    <div class="mcart__table-left">
+                                                        <div class="ordrtable__tovar-img">
+                                                            <img src="img/tovar-1.png" alt="">
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                Название модуля в пару  строк
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mcart__table-right">
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-price">
+                                                                <div class="ordrtable__tovar-price-new">
+                                                                    69 999 руб.
+                                                                </div>
+                                                                <div class="mcart__price-bottom">
+                                                                    <div class="ordrtable__tovar-price-old">
+                                                                        80 000 руб.
+                                                                    </div>
+                                                                    <span>Цена за 1 шт</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-count">
+                                                            <!-- <div class="ctrl">
+                                                                <div class="ctrl__button ctrl__button--decrement">&ndash;</div>
+                                                                <div class="ctrl__counter">
+                                                                    <input class="ctrl__counter-input" maxlength="10" type="text" value="0"></input>
+                                                                    <div class="ctrl__counter-num">0</div>
+                                                                </div>
+                                                                <div class="ctrl__button ctrl__button--increment">+</div>
+                                                            </div> -->
+                                                            <div class="m-number">
+                                                                <div class="value-button decrease" id="decrease" value="Decrease Value">-</div>
+                                                                <input type="number" class="input-number" id="number" value="0" />
+                                                                <div class="value-button increase" id="increase" value="Increase Value">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-price-1">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                <div class="ordrtable__tovar-price">
+                                                                    <div class="ordrtable__tovar-price-new">
+                                                                        140 000 руб.
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-price-old discount-container">
+                                                                        160 000 руб.
+                                                                        <div class="discount">
+                                                                            <img src="img/discount.svg" alt="">
+                                                                            <span>-15%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mcart__remove">
+                                                            <img src="img/mcart-remove.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="ordrtable__tovar mcart__item">
+                                                    
+                                                    <div class="mcart__table-left">
+                                                        <div class="ordrtable__tovar-img">
+                                                            <img src="img/tovar-1.png" alt="">
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                Название модуля в пару  строк
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mcart__table-right">
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-price">
+                                                                <div class="ordrtable__tovar-price-new">
+                                                                    69 999 руб.
+                                                                </div>
+                                                                <div class="mcart__price-bottom">
+                                                                    <div class="ordrtable__tovar-price-old">
+                                                                        80 000 руб.
+                                                                    </div>
+                                                                    <span>Цена за 1 шт</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-count">
+                                                            <!-- <div class="ctrl">
+                                                                <div class="ctrl__button ctrl__button--decrement">&ndash;</div>
+                                                                <div class="ctrl__counter">
+                                                                    <input class="ctrl__counter-input" maxlength="10" type="text" value="0"></input>
+                                                                    <div class="ctrl__counter-num">0</div>
+                                                                </div>
+                                                                <div class="ctrl__button ctrl__button--increment">+</div>
+                                                            </div> -->
+                                                            <div class="m-number">
+                                                                <div class="value-button decrease" id="decrease" value="Decrease Value">-</div>
+                                                                <input type="number" class="input-number" id="number" value="0" />
+                                                                <div class="value-button increase" id="increase" value="Increase Value">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-price-1">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                <div class="ordrtable__tovar-price">
+                                                                    <div class="ordrtable__tovar-price-new">
+                                                                        140 000 руб.
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-price-old discount-container">
+                                                                        160 000 руб.
+                                                                        <div class="discount">
+                                                                            <img src="img/discount.svg" alt="">
+                                                                            <span>-15%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mcart__remove">
+                                                            <img src="img/mcart-remove.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="ordrtable__tovar mcart__item">
+                                                    
+                                                    <div class="mcart__table-left">
+                                                        <div class="ordrtable__tovar-img">
+                                                            <img src="img/tovar-1.png" alt="">
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                Название модуля в пару  строк
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mcart__table-right">
+                                                        <div class="ordrtable__tovar-info">
+                                                            <div class="ordrtable__tovar-price">
+                                                                <div class="ordrtable__tovar-price-new">
+                                                                    69 999 руб.
+                                                                </div>
+                                                                <div class="mcart__price-bottom">
+                                                                    <div class="ordrtable__tovar-price-old">
+                                                                        80 000 руб.
+                                                                    </div>
+                                                                    <span>Цена за 1 шт</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-count">
+                                                            <!-- <div class="ctrl">
+                                                                <div class="ctrl__button ctrl__button--decrement">&ndash;</div>
+                                                                <div class="ctrl__counter">
+                                                                    <input class="ctrl__counter-input" maxlength="10" type="text" value="0"></input>
+                                                                    <div class="ctrl__counter-num">0</div>
+                                                                </div>
+                                                                <div class="ctrl__button ctrl__button--increment">+</div>
+                                                            </div> -->
+                                                            <div class="m-number">
+                                                                <div class="value-button decrease" id="decrease" value="Decrease Value">-</div>
+                                                                <input type="number" class="input-number" id="number" value="0" />
+                                                                <div class="value-button increase" id="increase" value="Increase Value">+</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ordrtable__tovar-info ordrtable__tovar-price-1">
+                                                            <div class="ordrtable__tovar-desc">
+                                                                <div class="ordrtable__tovar-price">
+                                                                    <div class="ordrtable__tovar-price-new">
+                                                                        140 000 руб.
+                                                                    </div>
+                                                                    <div class="ordrtable__tovar-price-old discount-container">
+                                                                        160 000 руб.
+                                                                        <div class="discount">
+                                                                            <img src="img/discount.svg" alt="">
+                                                                            <span>-15%</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mcart__remove">
+                                                            <img src="img/mcart-remove.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -810,7 +1053,10 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-
+    <script type="text/javascript" src="./js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/inputmask.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
 
 </body>
 <div id="vimeo-record-extension"></div>

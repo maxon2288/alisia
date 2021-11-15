@@ -248,18 +248,6 @@ var app = function () {
     };
 
     var forms = function () {
-        $('input[type=number]').each(function () {
-            var $this = $(this);
-            if (!$this.next('.number-input').length) {
-                $this.removeAttr('placeholder').removeClass('form-control').inputSpinner({
-                    groupClass: 'number-input',
-                    decrementButton: '<i class="icon icon-minus"></i>',
-                    incrementButton: '<i class="icon icon-plus"></i>',
-                    buttonsWidth: '25px',
-                    buttonsClass: ''
-                });
-            }
-        });
 
         $('.ffl-wrapper').each(function () {
             var $this = $(this);

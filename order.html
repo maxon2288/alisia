@@ -96,7 +96,7 @@
         })();
     </script>
 
-
+    <link rel="stylesheet" href="css/custom.css">
 
     <script type="text/javascript"
         src="./files-4/template_3051391e36cbcd6299bdac9631618307_v1.js.Без названия"></script>
@@ -652,7 +652,184 @@
                         </div>
                     </div>
 
-                    
+                    <div class="content-block">
+                        <h1>
+                            Оформление заказа
+                        </h1>
+                        <form action="#" class="ordrm form-order">
+                            <div class="ordrm__left">
+                                <div class="ordrm__top ordrm__box">
+                                    <div class="ordrm__box-title">
+                                        Регион доставки
+                                    </div>
+                                    <div class="ordrm__top-content">
+                                        <div class="ordrm__field">
+                                            <input type="text" name="order_place"  placeholder="Местоположение">
+                                        </div>
+                                        <div class="ordrm__field">
+                                            <input type="text" name="order_index"  placeholder="Индекс">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordrm__row">
+                                    <div class="ordrm__item ordrm__box">
+                                        <div class="ordrm__box-title">
+                                            Способ доставки
+                                        </div>
+                                        <label class="ordrm__check">
+                                            <input checked type="radio" name="group1">
+                                            <div class="ordrm__check-left">
+                                                <img src="img/checkbox.svg" alt="">
+                                            </div>
+                                            <div class="ordrm__check-right">
+                                                <div class="ordrm__check-title">
+                                                    Доставка курьером
+                                                    <div class="ordrm__label">
+                                                        500 руб.
+                                                    </div>
+                                                </div>
+                                                <div class="ordrm__desc ordrm__check-desc">
+                                                    Доставка осуществляется в течение дня  в удобное для вас время.
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="ordrm__check">
+                                            <input type="radio" name="group1">
+                                            <div class="ordrm__check-left">
+                                                <img src="img/checkbox.svg" alt="">
+                                            </div>
+                                            <div class="ordrm__check-right">
+                                                <div class="ordrm__check-title">
+                                                    Самовывоз
+                                                    <div class="ordrm__label">
+                                                        Бесплатно
+                                                    </div>
+                                                </div>
+                                                <div class="ordrm__desc ordrm__check-desc">
+                                                    Доставка осуществляется в течение дня  в удобное для вас время.
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="ordrm__item ordrm__box">
+                                        <div class="ordrm__box-title">
+                                            Способ оплаты
+                                        </div>
+                                        <label class="ordrm__check">
+                                            <input type="radio" checked name="group2">
+                                            <div class="ordrm__check-left">
+                                                <img src="img/checkbox.svg" alt="">
+                                            </div>
+                                            <div class="ordrm__check-right">
+                                                <div class="ordrm__check-title">
+                                                    Наличный расчет
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="ordrm__check">
+                                            <input type="radio" name="group2">
+                                            <div class="ordrm__check-left">
+                                                <img src="img/checkbox.svg" alt="">
+                                            </div>
+                                            <div class="ordrm__check-right">
+                                                <div class="ordrm__check-title">
+                                                    Онлайн-оплата
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="ordrm__check">
+                                            <input type="radio" name="group2">
+                                            <div class="ordrm__check-left">
+                                                <img src="img/checkbox.svg" alt="">
+                                            </div>
+                                            <div class="ordrm__check-right">
+                                                <div class="ordrm__check-title">
+                                                    Безналичный расчет
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <div class="ordrm__desc">
+                                            Оплата производится Яндекс деньгами, через сервис Яндекс.Касса. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordrm__box ordrm__bottom">
+                                    <div class="ordrm__box-title">
+                                        Покупатель
+                                    </div>
+                                    <div class="ordrm__bottom-fields">
+                                        <div class="ordrm__bottom-field">
+                                            <input type="text" name="order_name" placeholder="ФИО">
+                                        </div>
+                                        <div class="ordrm__bottom-row">
+                                            <div class="ordrm__bottom-field">
+                                                <input type="text" name="ordrm_phone" class="phone-mask" placeholder="Номер телефона">
+                                            </div>
+                                            <div class="ordrm__bottom-field">
+                                                <input type="text" name="ordrm_email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="ordrm__bottom-field">
+                                            <textarea name="ordrm_address" placeholder="Адрес доставки"></textarea>
+                                        </div>
+                                        <div class="ordrm__bottom-field">
+                                            <textarea name="ordrm_deliv" placeholder="Комментарии к заказу"></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordrm__right">
+                                <div class="ordrm__sidebar sticky-block">
+                                    <div class="ordrm__sidebar-item">
+                                        <div class="ordrm__sidebar-left">
+                                            <div class="ordrm__sidebar-desc">
+                                                Всего товаров на сумму
+                                            </div>
+                                        </div>
+                                        <div class="ordrm__sidebar-right">
+                                            <div class="ordrm__sidebar-title">
+                                                104 999 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ordrm__sidebar-item">
+                                        <div class="ordrm__sidebar-left">
+                                            <div class="ordrm__sidebar-desc">
+                                                Стоимость доставки
+                                            </div>
+                                        </div>
+                                        <div class="ordrm__sidebar-right">
+                                            <div class="ordrm__sidebar-title">
+                                                500 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ordrm__sidebar-item no-border">
+                                        <div class="ordrm__sidebar-left">
+                                            <div class="ordrm__sidebar-desc">
+                                                Итого:
+                                            </div>
+                                            <div class="ordrm__sidebar-desc-1">
+                                                Сумма НДС: 0 ₽
+                                            </div>
+                                        </div>
+                                        <div class="ordrm__sidebar-right">
+                                            <div class="ordrm__sidebar-itog">
+                                                104 999 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ordrm__sidebar-button-cont">
+                                        <button class="ordrm__sidebar-button">
+                                            Оформить заказ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -811,6 +988,10 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
+    <script type="text/javascript" src="./js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/inputmask.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
 
 
 </body>
