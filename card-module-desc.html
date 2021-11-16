@@ -29,6 +29,7 @@
     <link rel="shortcut icon" href="https://alicia-mebel.ru/favicon.ico" type="image/x-icon">
     <link href="./files-4/core.css" type="text/css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/custom.css">
 
 
     <link href="./files-4/template_edec0d58f0681b6736e1b4045bfdcb4d_v1.css" type="text/css" data-template-style="true"
@@ -780,41 +781,123 @@
                                     </div>
                                 </div>
                                 <div class="product__info">
-                                    <h1>Кровать с подсветкой 1,6 Беатрис (мод.1.2)</h1>
+                                    <div class="mmodule__ctg">
+                                        <span>Коллеция</span> <a href="#">«Название коллекции»</a>
+                                    </div>
+                                    <h1>Название модуля <br> в две строки</h1>
+                                    <div class="mmodule__available">
+                                        нет в наличии
+                                    </div>
+                                    <div class="ordrtable__tovar-price">
+                                        <div class="ordrtable__tovar-price-new">
+                                            140 000 руб.
+                                        </div>
+                                        <div class="ordrtable__tovar-price-old discount-container">
+                                            160 000 руб.
+                                            <div class="discount">
+                                                <img src="img/discount.svg" alt="">
+                                                <span>-15%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mmodule__select-container">
+                                        <div class="mmodule__select-content">
+                                            <div class="mmodule__select-title">
+                                                Цвет
+                                            </div>
+                                            <div class="mmodule__select">
+                                                <div class="mmodule__select-top">
+                                                    <div class="mmodule__top-img">
+                                                        <img class="mmodule-js-img" src="img/mmodule-color.png" alt="">
+                                                    </div>
+                                                    <div class="mmodule__select-top-title">
+                                                        ЛДСП Палермо
+                                                    </div>
+                                                    <input type="hidden" class="mmodule__select-hidden-title" value="ЛДСП Палермо">
+                                                    <input type="hidden" class="mmodule__select-hidden-img" value="img/mmodule-color.png">
+                                                    <div class="mmodule__select-img-close">
+                                                        <img src="img/mmodule-arrow.svg" alt="">
+                                                    </div>
+                                                    <div class="mmodule__list">
+                                                        <div class="mmodule__item">
+                                                            <div class="mmodule__item-img">
+                                                                <img class="mmodule-item-img-js" src="img/mmodule-color.png" alt="">
+                                                            </div>
+                                                            <div class="mmodule__item-text">ЛДСП Палермо</div>
+                                                        </div>
+                                                        <div class="mmodule__item">
+                                                            <div class="mmodule__item-img">
+                                                                <img class="mmodule-item-img-js" src="https://via.placeholder.com/100x100" alt="">
+                                                            </div>
+                                                            <div class="mmodule__item-text">ЛДСП Палермо2</div>
+                                                        </div>
+                                                        <div class="mmodule__item">
+                                                            <div class="mmodule__item-img">
+                                                                <img class="mmodule-item-img-js" src="https://via.placeholder.com/100x100" alt="">
+                                                            </div>
+                                                            <div class="mmodule__item-text">ЛДСП Палермо3</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="product__sizes">
                                         <div class="product-sizes__label">Размеры</div>
                                         <div class="product-sizes__list">
                                             <dl class="product-sizes__item">
-                                                <dt>Ширина</dt>
+                                                <dt>Длина</dt>
                                                 <dd>1684мм</dd>
                                             </dl>
                                             <dl class="product-sizes__item">
-                                                <dt>Высота</dt>
+                                                <dt>Ширина</dt>
                                                 <dd>1143мм</dd>
                                             </dl>
                                             <dl class="product-sizes__item">
-                                                <dt>Глубина</dt>
+                                                <dt>Высота</dt>
                                                 <dd>2224мм</dd>
                                             </dl>
                                         </div>
                                     </div>
                                     <div class="product__desc">
                                         <div class="product-desc__text">
+                                            <h5>
+                                                Текстовое описание коллекции
+                                            </h5>
                                             <p>
+                                                Эксплуатационные свойства такой модели на высоте. Она способна прослужить долгие годы, сохраняя презентабельный внешний вид. 
+                                            За съемным чехлом изделия легко ухаживать. Более того, владелец такой мебели может менять обивку, тем самым обновляя дизайн кресла.
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="product__buttons"><a class="btn btn-primary"
-                                            href="https://alicia-mebel.ru/where-to-buy/">Где купить ?</a>
-                                        <a class="btn btn-default js-favorite"
-                                            href="https://alicia-mebel.ru/catalog/spalni/spalnya-beatris/krovat-s-podsvetkoy-1-6-beatris/#"
-                                            data-id="83">
-                                            <svg class="icon icon-heart">
-                                                <use
-                                                    xlink:href="/local/templates/aliciav2/public/images/main.svg#icon-heart">
-                                                </use>
-                                            </svg><span>В избранное</span></a>
+                                    <div class="mmodule__bottom">
+                                        <div class="mmodule__count">
+                                            <div class="m-number">
+                                                <div class="value-button decrease" id="decrease" value="Decrease Value">-</div>
+                                                <input type="number" class="input-number" id="number" value="0" />
+                                                <div class="value-button increase" id="increase" value="Increase Value">+</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mmodule__basket">
+                                            <div class="mmodule__basket-img">
+                                                <img src="img/module-basket.svg" alt="">
+                                                <img src="img/module-basket-active.svg" alt="">
+                                            </div>
+                                            <span></span>
+                                        </div>
+                                        <div class="mmodule__fav">
+                                            <a class="btn btn-default js-favorite"
+                                                href="https://alicia-mebel.ru/catalog/spalni/spalnya-beatris/krovat-s-podsvetkoy-1-6-beatris/#"
+                                                data-id="83">
+                                                <img src="img/mtovar-like.svg" alt="">
+                                                <span>В избранное</span>
+                                            </a>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div class="product__tabs">
@@ -1046,7 +1129,10 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-
+    <script type="text/javascript" src="./js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.js"></script>
+    <script type="text/javascript" src="./js/inputmask.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
 
 </body>
 <div id="vimeo-record-extension"></div>

@@ -127,6 +127,24 @@
                     <div class="container">
                         <div class="row">
                             <div class="header__contacts">
+                                <div class="header-contacts__item header-contacts__item-geo">
+                                    <div class="header__geo">
+                                        <div class="header__geo-img">
+                                            <img src="img/header-geo.svg" alt="">
+                                        </div>
+                                        <div class="header__geo-text">
+                                            Санкт-Петербург
+                                        </div>
+                                        <div class="header__geo-icon">
+                                            <img src="img/geo-arrow.svg" alt="">
+                                        </div>
+                                        <div class="header__geo-menu">
+                                            <a href="#">Санкт-Петербург</a>
+                                            <a href="#">Москва</a>
+                                            <a href="#">Екатеринбург</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="header-contacts__item header-contacts__item-email">
                                     <a href="mailto:fabrika@alicia-mebel.ru">
                                         <span class="header-contacts__icon">
@@ -151,6 +169,7 @@
                                         <span class="header-contacts__label">+7 (3412) 220-014</span>
                                     </a>
                                 </div>
+                                
                                 <div class="header-contacts__item header-contacts__item-callback">
                                     <a class="ajax-popup" href="https://alicia-mebel.ru/local/ajax/form.callback.php"
                                         data-modal="{&quot;type&quot;:&quot;modal-callback&quot;,&quot;width&quot;:&quot;sm&quot;}">
@@ -169,11 +188,6 @@
                                 <div class="header-button__item">
                                     <a class="show-search" href="https://alicia-mebel.ru/#">
                                         <span class="header-button__icon">
-                                            <svg class="icon icon-search">
-                                                <use
-                                                    xlink:href="/local/templates/aliciav2/public/images/main.svg#icon-search">
-                                                </use>
-                                            </svg>
                                             <svg class="icon icon-close">
                                                 <use
                                                     xlink:href="/local/templates/aliciav2/public/images/main.svg#icon-close">
@@ -204,13 +218,16 @@
                                 <div class="header-button__item">
                                     <a href="https://alicia-mebel.ru/favorite/">
                                         <span class="header-button__icon">
-                                            <svg class="icon icon-heart">
-                                                <use
-                                                    xlink:href="/local/templates/aliciav2/public/images/main.svg#icon-heart">
-                                                </use>
-                                            </svg>
+                                            <img src="img/header-favorite.svg" alt="">
                                         </span>
                                         <span class="header-button__coll js-favorite-counter">0</span>
+                                    </a>
+                                </div>
+                                <div class="header-button__item">
+                                    <a href="https://alicia-mebel.ru/favorite/">
+                                        <span class="header-button__icon">
+                                            <img src="img/header-profile.svg" alt="">
+                                        </span>
                                     </a>
                                 </div>
                                 <!--<div class="header-button__item">
@@ -230,8 +247,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="header__logo">
-                                <img src="./files-1/logo-color.png"
-                                    srcset="/local/templates/aliciav2/public/images/logo-color@2x.png 2x" width="184"
+                                <img src="./img/logo.svg"
+                                    srcset="./img/logo.svg" width="184"
                                     height="51" alt="">
                             </div>
                             <div class="header__hamburger">
@@ -239,6 +256,14 @@
                                     <span class="header-hamburger__hamburger"></span>
                                     <span class="header-hamburger__name">Меню</span>
                                 </a>
+                                <div class="header-button__item header-basket-button">
+                                    <a href="https://alicia-mebel.ru/favorite/">
+                                        <span class="header-button__icon">
+                                            <img src="img/mtovar-basket.svg" alt="">
+                                        </span>
+                                        <span class="header-button__coll js-basket-counter">0</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="header__menu">
                                 <div class="header-menu__top">
@@ -614,6 +639,14 @@
                                             </a>
                                         </li>
                                     </ul>
+                                    <div class="header-button__item header-basket-button">
+                                        <a href="https://alicia-mebel.ru/favorite/">
+                                            <span class="header-button__icon">
+                                                <img src="img/mtovar-basket.svg" alt="">
+                                            </span>
+                                            <span class="header-button__coll js-basket-counter">0</span>
+                                        </a>
+                                    </div>
                                 </nav>
                             </div>
                             <div class="header-menu__bg"></div>
@@ -631,35 +664,35 @@
                         style="transition-duration: 0ms; transform: translate3d(-1903px, 0px, 0px);">
                         <div class="slider-title__item slider-title-pic swiper-slide swiper-slide-duplicate swiper-slide-prev"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-izabella/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/fbb/3kgt5hhdtv8qysj22m7pektsssgybld0.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_292" data-swiper-slide-index="5" role="group" aria-label="1 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide swiper-slide-visible swiper-slide-active"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-beatris/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/01a/72yb9tn73ykevtb75wg7a9aetce67mwc.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_237" data-swiper-slide-index="0" role="group" aria-label="2 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide swiper-slide-next"
                             onclick="location.href=&#39;/catalog/gostinye/gostinaya-chester/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/e51/vh1dk5i8jt1dq05678x2k1753uezil8h.jpeg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_180" data-swiper-slide-index="1" role="group" aria-label="3 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-laura/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/0ee/g0ojedygcvnjzfmdl33wonmv38f03zeg.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_289" data-swiper-slide-index="2" role="group" aria-label="4 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-ameli/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/9da/1idigoxdekg0tyram9df2mpvgomyyrt9.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_290" data-swiper-slide-index="3" role="group" aria-label="5 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide"
                             onclick="location.href=&#39;/catalog/detskie/detskaya-grinvich/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/a6f/k7vcm9xkuxbjmodjjuqa62546t00752i.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_291" data-swiper-slide-index="4" role="group" aria-label="6 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide swiper-slide-duplicate-prev"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-izabella/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/fbb/3kgt5hhdtv8qysj22m7pektsssgybld0.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_292" data-swiper-slide-index="5" role="group" aria-label="7 / 8"></div>
                         <div class="slider-title__item slider-title-pic swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                             onclick="location.href=&#39;/catalog/spalni/spalnya-beatris/&#39;"
-                            style="background-image: url(&quot;/upload/iblock/01a/72yb9tn73ykevtb75wg7a9aetce67mwc.jpg&quot;); width: 1903px;"
+                            style="background-image: url(img/first-bg-1.jpg); width: 1903px;"
                             id="bx_4665576_237" data-swiper-slide-index="0" role="group" aria-label="8 / 8"></div>
                     </div>
                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
@@ -690,10 +723,47 @@
                 </div>
             </div>
 
+            
+            <div class="catalog__tabs tabs__block">
 
-            <div class="catalog__tabs tabs__block"
-                data-type="{&quot;slider&quot;:true,&quot;options&quot;:{&quot;loop&quot;:false,&quot;auto&quot;:false,&quot;nav&quot;:true,&quot;dots&quot;:false,&quot;slidesPerView&quot;:&quot;auto&quot;}}">
-
+                <div class="mtab">
+                    <div class="mtab__container">
+                        <div class="mtab__list mtab-slider">
+                            <div class="mtab__control mtab__control-prev">
+                                <img src="img/mtab-slider-arrow.svg" alt="">
+                            </div>
+                            <div class="mtab__control mtab__control-next">
+                                <img src="img/mtab-slider-arrow.svg" alt="">
+                            </div>
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">Шкафы</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Кровати</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Столы</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Обувницы</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Полки</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Комоды</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Тумбы</a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">Зеркала</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="mtabs__top">
                     <div class="mtabs__title">
@@ -1103,6 +1173,278 @@
                                     <img src="img/mslider-nav.svg" alt="">
                                 </div>
                                 <div class="mslider__slider mslider-slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item mtovar_new mtovar_sale">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom available">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item mtovar_sale">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom mtovar-dicscount" data-discount="80 000 руб.">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom mtovar-dicscount" data-discount="80 000 руб.">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item mtovar_new">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom available">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item mtovar_sale">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom mtovar-dicscount" data-discount="80 000 руб.">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="catalog__item">
+                                                <div class="mtovar__label-container">
+                                                    <img class="mtovar__label-new" src="img/mtovar-new.svg" alt="">
+                                                    <img class="mtovar__label-sale" src="img/mtovar-sale.svg" alt="">
+                                                </div>
+                                                <div class="catalog-item__back">
+                                                    <div class="catalog-item__picture"><a href="https://alicia-mebel.ru//catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <img src="https://via.placeholder.com/1000x1000"  loading="lazy" alt="Тумба Честер (мод.1)"></a>
+                                                        <div class="catalog-item__favotire mtovar-favorite">
+                                                            <a href="#" title="Добавить в избранное" class="js-favorite" data-id="13">
+                                                                <img src="img/mtovar-like.svg" alt="">
+                                                                <img src="img/mtovar-like-2.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="catalog-item__bottom" href="https://alicia-mebel.ru/catalog/gostinye/gostinaya-chester/tumba-chester-mod-1/">
+                                                        <div class="catalog-item__name">Название модуля в пару  строк</div>
+                                                        <div class="mtovar__bottom mtovar-dicscount" data-discount="80 000 руб.">
+                                                            <div class="mtovar__price">
+                                                                34 999 руб.
+                                                            </div>
+                                                            <div class="mtovar__basket">
+                                                                <img src="img/mtovar-basket.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="mslider">
+                    <div class="content-block">
+                        <div class="mslider__container">
+                            <div class="mslider__title">
+                                Акции
+                            </div>
+                            <div class="mslider__content ">
+                                <div class="mslider__nav mslider__prev mslider-prev3">
+                                    <img src="img/mslider-nav.svg" alt="">
+                                </div>
+                                <div class="mslider__nav mslider__next mslider-next3">
+                                    <img src="img/mslider-nav.svg" alt="">
+                                </div>
+                                <div class="mslider__slider mslider-slider3">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="catalog__item mtovar_new mtovar_sale">
