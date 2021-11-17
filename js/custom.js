@@ -88,6 +88,9 @@ $(window).ready(function () {
 			1023: {
 				slidesPerView: 2,
 			},
+			768: {
+				slidesPerView: 2,
+			},
 			767: {
 				slidesPerView: 1,
 			}
@@ -108,6 +111,9 @@ $(window).ready(function () {
 				slidesPerView: 3,
 			},
 			1023: {
+				slidesPerView: 2,
+			},
+			768: {
 				slidesPerView: 2,
 			},
 			767: {
@@ -132,11 +138,24 @@ $(window).ready(function () {
 			1023: {
 				slidesPerView: 2,
 			},
+			768: {
+				slidesPerView: 2,
+			},
 			767: {
 				slidesPerView: 1,
 			}
 		}
 	});
+
+	$(".header__geo").click(function() {
+		$(this).toggleClass("active");
+	});
+	$(".header__geo a").click(function() {
+		$(this).closest(".header__geo").find(".header__geo-text").text($(this).text());
+	});
+
+	
+ 
 	var mcardslider = new Swiper('.mcardslider-slider', {
 		spaceBetween: 20,
 		slidesPerView: 1,
@@ -167,8 +186,8 @@ $(window).ready(function () {
 		var it = $(this);
 		$(this).find(".decrease").click(function() {
 			var value = it.find('.input-number').val();
-			value = isNaN(value) ? 0 : value;
-			value < 1 ? value = 1 : '';
+			value = isNaN(value) ? 1 : value;
+			value < 2 ? value = 2 : '';
 			value--;
 			it.find('.input-number').val(value);
 		});
@@ -180,6 +199,23 @@ $(window).ready(function () {
 		});
 	});
 
+	$(".js-tabs").each(function() {
+		$('.js-tab').click(function(e) {
+			e.preventDefault();
+			var it = $(this);
+			var href = it.attr("href");
+			$(this).closest(".js-tabs-container").find(".js-tab").removeClass("active");
+			it.addClass("active");
+			$(".js-cont-tab").removeClass("active");
+			$(this).closest(".js-tabs").find("." + href).each(function () {
+				$("." + href).addClass('active');
+				$("." + href + " input").val('');
+				$("." + href + " input").removeClass("is-focus");
+			}); 
+		});
+	});	
+
+
 	$(document).on("click", ".mmodule__item", function() {
 		var text = $(this).find(".mmodule__item-text").text();
 		var src = $(this).find(".mmodule-item-img-js").attr("src");
@@ -190,6 +226,11 @@ $(window).ready(function () {
 		$(this).closest(".mmodule__select-top").find(".mmodule__select-hidden-img").val(src)
 		$(this).closest(".mmodule__select-top").find(".mmodule-js-img").attr("src", src)
 	});
+
+	$(document).on("click", ".mtovar__basket", function() {
+		$(this).toggleClass("active");
+	});
+
 	$(".mmodule__basket").click(function() {
 		$(this).toggleClass("active");
 	})
@@ -197,6 +238,7 @@ $(window).ready(function () {
 	$(".sticky-block").stick_in_parent();
 
 	$(".mprofile__mobile").click(function () {
+		console.log(213)
 		$(".mprofile__sidebar").addClass("active");
 	});
 	$(".mprofile__sidebar-close").click(function () {
