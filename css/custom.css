@@ -3806,3 +3806,7 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 150px;
   height: auto;
 }
+
+.bg-grey {
+  background: #f8f8f8;
+}
